@@ -1,5 +1,5 @@
 app_identifier "io.bitrise.BitriseFastlaneSample" # The bundle identifier of your app
-apple_id "" # Your Apple email address
+apple_id "sunil.chandaka@fissionlabs.com" # Your Apple email address
 
 # You can uncomment any of the lines below and add your own
 # team selection in case you're in multiple teams
