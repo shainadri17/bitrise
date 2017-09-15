@@ -33,20 +33,7 @@ platform :ios do
 
   desc "Runs all tests, archives app"
   lane :test do
-
-    match(
-      username: ENV['FASTLANE_USERNAME'],
-      app_identifier: "io.bitrise.BitriseFastlaneSample",
-      readonly: true,
-      type: "appstore"
-    )
-
-    scan(
-      scheme: "BitriseFastlaneSample",
-      destination: "name=iPhone 5s,OS=latest",
-      output_directory: ENV['BITRISE_DEPLOY_DIR']
-    )
-
+    
     gym(
       scheme: "BitriseFastlaneSample",
       configuration: "Release",
